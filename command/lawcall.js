@@ -6,6 +6,7 @@ module.exports = {
 	name: `lawcall`,
 	description: `เรียกบทบัญญัติแห่งกฎหมายใดๆ 1 มาตรา`,
 	execute: async(message, args) => {
+		var split_section_word = `มาตรา ${section_num}`
 		if (!args[0]) {
 			const embed = new Discord.MessageEmbed()
 				.setColor(`#0099ff`)
@@ -42,7 +43,7 @@ module.exports = {
 				.setColor(`#0099ff`)
 				.setTitle(`ประมวลกฎหมายแพ่งและพาณิชย์ มาตรา ${section_num}`)
 				.setAuthor(`${bot_author}`, `https://i.imgur.com/wSTFkRM.png`, `https://discord.js.org`)
-				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`\,มาตรา ${section_num}`)} **\"`)
+				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`มาตรา ${section_num}`)} **\"`)
 				.setTimestamp()
 				.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
@@ -65,7 +66,7 @@ module.exports = {
 				.setColor(`#0099ff`)
 				.setTitle(`ประมวลกฎหมายอาญา มาตรา ${section_num}`)
 				.setAuthor(`${bot_author}`, `https://i.imgur.com/wSTFkRM.png`, `https://discord.js.org`)
-				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`\,มาตรา ${section_num}`)} **\"`)
+				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`มาตรา ${section_num}`)} **\"`)
 				.setTimestamp()
 				.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
@@ -88,7 +89,7 @@ module.exports = {
 				.setColor(`#0099ff`)
 				.setTitle(`ประมวลกฎหมายวิธีพิจารณาความแพ่ง มาตรา ${section_num}`)
 				.setAuthor(`${bot_author}`, `https://i.imgur.com/wSTFkRM.png`, `https://discord.js.org`)
-				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`\,มาตรา ${section_num}`)} **\"`)
+				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`มาตรา ${section_num}`)} **\"`)
 				.setTimestamp()
 				.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
@@ -111,7 +112,7 @@ module.exports = {
 				.setColor(`#0099ff`)
 				.setTitle(`ประมวลกฎหมายวิธีพิจารณาความแพ่ง มาตรา ${section_num}`)
 				.setAuthor(`${bot_author}`, `https://i.imgur.com/wSTFkRM.png`, `https://discord.js.org`)
-				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`\,มาตรา ${section_num}`)} **\"`)
+				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`มาตรา ${section_num},`)} **\"`)
 				.setTimestamp()
 				.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
