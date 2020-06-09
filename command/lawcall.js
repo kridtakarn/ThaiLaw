@@ -6,7 +6,6 @@ module.exports = {
 	name: `lawcall`,
 	description: `เรียกบทบัญญัติแห่งกฎหมายใดๆ 1 มาตรา`,
 	execute: async(message, args) => {
-		var split_section_word = `มาตรา ${section_num}`
 		if (!args[0]) {
 			const embed = new Discord.MessageEmbed()
 				.setColor(`#0099ff`)
