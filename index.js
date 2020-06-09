@@ -27,7 +27,7 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	if (command === 'help') {
-		client.command.get('help').execute(message, args);
+		client.commands.get('help').execute(message, args);
 	}
 
 	if (command === 'ping') {
