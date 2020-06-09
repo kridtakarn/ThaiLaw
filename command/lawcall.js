@@ -65,7 +65,7 @@ module.exports = {
 				.setColor(`#0099ff`)
 				.setTitle(`ประมวลกฎหมายอาญา มาตรา ${section_num}`)
 				.setAuthor(`${bot_author}`, `https://i.imgur.com/wSTFkRM.png`, `https://discord.js.org`)
-				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`มาตรา ${section_num}`)} **\"`)
+				.setDescription(`บัญญัติว่า \"**${law._source.search.split(`\,มาตรา ${section_num}`)} **\"`)
 				.setTimestamp()
 				.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
