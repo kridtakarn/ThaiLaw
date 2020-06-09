@@ -16,7 +16,7 @@ client.once('ready', () => {
 	
 	console.log(`เข้าสู่ระบบที่ ${client.user.tag}!`);
 	client.user.setActivity(`ใช้ ${prefix}lawcall`, { type: 'LISTENING' })
-  .then(presence => console.log(`กิจกรรมของบอทได้รับการตั้งค่าเป็น ${presence.activities[0].name}`))
+  .then(presence => console.log(`กิจกรรมของบอทได้รับการตั้งค่าเป็น \'${presence.activities[0].name}\'`))
   .catch(console.error);
 });
 
