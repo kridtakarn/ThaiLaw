@@ -15,7 +15,7 @@ module.exports = {
 	.addFields(
  		{ value: `\`${prefix}help\` สำหรับวิธีการใช้งานบอท ThaiLaw`},
 		{ value: `\`${prefix}lawcall\` สำหรับเรียกบทบัญญัติของแต่ละกฎหมาย ครั้งละ 1 มาตรา`}
-
+		)
 	.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 
 channel.send(embed);
