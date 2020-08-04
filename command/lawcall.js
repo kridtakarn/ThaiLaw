@@ -61,6 +61,13 @@ module.exports = {
 					.setDescription(
 							`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/civil_and_commercial_code-${section_num})
 						`)
+					.addField(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ บรรพ ${law.source.buff} ลักษณะ ${law.source.buff_suff_first} หมวด ${law.source.buff_suff_second}
+							`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
