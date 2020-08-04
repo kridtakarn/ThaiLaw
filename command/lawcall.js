@@ -102,6 +102,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `บรรพ ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายแพ่งและพาณิชย์ มาตรา ${section_num}/${sub_section_num}`)
@@ -109,6 +130,13 @@ module.exports = {
 					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
 					.setDescription(
 						`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}/${sub_section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/civil_and_commercial_code-${section_num}-${sub_section_num})`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+								`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -157,6 +185,13 @@ module.exports = {
 					.setDescription(
 							`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/penal_code-${section_num})
 						`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+								`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -170,6 +205,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `บรรพ ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายอาญา มาตรา ${section_num}/${sub_section_num}`)
@@ -177,6 +233,13 @@ module.exports = {
 					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
 					.setDescription(
 						`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}/${sub_section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/penal_code-${section_num}-${sub_section_num})`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+									`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -225,6 +288,13 @@ module.exports = {
 					.setDescription(
 							`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/civil_procedure_code-${section_num})
 						`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+									`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -238,6 +308,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `บรรพ ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายวิธีพิจารณาความแพ่ง มาตรา ${section_num}/${sub_section_num}`)
@@ -245,6 +336,13 @@ module.exports = {
 					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
 					.setDescription(
 						`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}/${sub_section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/civil_procedure_code-${section_num}-${sub_section_num})`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+										`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -293,6 +391,13 @@ module.exports = {
 					.setDescription(
 							`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/criminal_procedure_code-${section_num})
 						`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+										`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
@@ -306,6 +411,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `ภาค ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายวิธีพิจารณาความอาญา มาตรา ${section_num}/${sub_section_num}`)
@@ -313,6 +439,13 @@ module.exports = {
 					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
 					.setDescription(
 						`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}/${sub_section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/criminal_procedure_code-${section_num}-${sub_section_num})`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+										`
+						}
+					)
 					.setTimestamp()
 					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
 				message.channel.send(embed);
