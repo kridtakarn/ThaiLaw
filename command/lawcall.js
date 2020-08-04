@@ -61,10 +61,10 @@ module.exports = {
 					.setDescription(
 							`บัญญัติว่า \"**${law._source.search.slice(0,1950).split(`มาตรา ${section_num}`)} **\"...[ดูเพิ่มเติม](https://www.lawphin.com/detail/law/civil_and_commercial_code-${section_num})
 						`)
-					.addField(
+					.addFields(
 						{
 							name: "แม่บทของกฎหมาย",
-							value: `กฎหมายนี้อยู่ภายใต้ บรรพ ${law.source.buff} ลักษณะ ${law.source.buff_suff_first} หมวด ${law.source.buff_suff_second}
+							value: `กฎหมายนี้อยู่ภายใต้ บรรพ ${law._source.buff} ลักษณะ ${law._source.buff_suff_first} หมวด ${law._source.buff_suff_second}
 							`
 						}
 					)
