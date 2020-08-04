@@ -85,7 +85,7 @@ module.exports = {
 					.addFields(
 						{
 							name: "แม่บทของกฎหมาย",
-							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
 							`
 						}
 					)
