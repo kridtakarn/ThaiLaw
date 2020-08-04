@@ -55,23 +55,23 @@ module.exports = {
 				let law = await getLaw();
 				function hide_buff() {
 					if (law._source.buff === "") {
-						return "ไม่มีบรรพ";
+						return "";
 					} else {
 						return `บรรพ ${law._source.buff}`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
-						return "ไม่มีลักษณะ";
+						return "";
 					} else {
-						return `ลักษณะ ${law._source.buff_suff_first}`;
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
-						return "ไม่มีหมวด";
+						return "";
 					} else {
-						return `หมวด ${law._source.buff_suff_second}`;
+						return ` > หมวด ${law._source.buff_suff_second}`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -128,6 +128,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `ภาค ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายอาญา มาตรา ${section_num}`)
@@ -175,6 +196,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `ภาค ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายวิธีพิจารณาความแพ่ง มาตรา ${section_num}`)
@@ -222,6 +264,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "";
+					} else {
+						return `ภาค ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "";
+					} else {
+						return ` > ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "";
+					} else {
+						return ` > หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายวิธีพิจารณาความอาญา มาตรา ${section_num}`)
