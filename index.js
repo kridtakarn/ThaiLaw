@@ -15,7 +15,7 @@ for (const file of commandFiles) {
 client.once('ready', () => {
 	
 	console.log(`เข้าสู่ระบบที่ ${client.user.tag}!`);
-	client.user.setActivity(`ใช้ ${prefix}lawcall`, { type: 'LISTENING' })
+	client.user.setActivity(`ใช้ ${prefix}help | สถิตอยู่ ${client.guilds.cache.size} เซิร์ฟเวอร์ | สืบค้นกฎหมายไทยเพื่อความสะดวกและยุติธรรม`, { type: 'PLAYING' })
   .then(presence => console.log(`กิจกรรมของบอทได้รับการตั้งค่าเป็น \'${presence.activities[0].name}\'`))
   .catch(console.error);
 });
@@ -29,13 +29,23 @@ client.on('message', message => {
 	if (command === 'help') {
 		client.commands.get('help').execute(message, args);
 	}
-
-	if (command === 'ping') {
+	else if (command === 'ping') {
 		client.commands.get('ping').execute(message, args);
 	}
-
-	if (command === 'lawcall') {
+	else if (command === 'lawcall') {
 		client.commands.get('lawcall').execute(message, args);
+	}
+	else if (command === 'calc') {
+		client.commands.get('calc').execute(message, args);
+	}
+	else if (command === 'goldprice') {
+		client.commands.get('goldprice').execute(message, args);
+	}
+	else if (command === 'yearcalc') {
+		client.commands.get('yearcalc').execute(message, args);
+	}
+	else {
+		client.commands.get('help').execute(message, args);
 	}
 });
 
