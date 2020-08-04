@@ -53,6 +53,27 @@ module.exports = {
 					return law_response;
 				};
 				let law = await getLaw();
+				function hide_buff() {
+					if (law._source.buff === "") {
+						return "ไม่มีบรรพ";
+					} else {
+						return `บรรพ ${law._source.buff}`;
+					}
+				}
+				function hide_buff_suff_first() {
+					if (law._source.buff_suff_first === "") {
+						return "ไม่มีลักษณะ";
+					} else {
+						return `ลักษณะ ${law._source.buff_suff_first}`;
+					}
+				}
+				function hide_buff_suff_second() {
+					if (law._source.buff_suff_second === "") {
+						return "ไม่มีหมวด";
+					} else {
+						return `หมวด ${law._source.buff_suff_second}`;
+					}
+				}
 				const embed = new Discord.MessageEmbed()
 					.setColor(`#FFD700`)
 					.setTitle(`ประมวลกฎหมายแพ่งและพาณิชย์ มาตรา ${section_num}`)
@@ -64,7 +85,7 @@ module.exports = {
 					.addFields(
 						{
 							name: "แม่บทของกฎหมาย",
-							value: `กฎหมายนี้อยู่ภายใต้ บรรพ ${law._source.buff} ลักษณะ ${law._source.buff_suff_first} หมวด ${law._source.buff_suff_second}
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff} ${hide_buff_suff_first()} ${hide_buff_suff_second()}
 							`
 						}
 					)
