@@ -160,21 +160,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -209,21 +209,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -263,21 +263,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -312,21 +312,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ภาค ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ภาค ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [ภาค ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ภาค ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความแพ่ง&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -366,21 +366,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)}`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)}`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ลักษณะ ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [หมวด ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
@@ -415,21 +415,21 @@ module.exports = {
 					if (law._source.buff === "") {
 						return "";
 					} else {
-						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return `[ภาค ${law._source.buff}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-100-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_first() {
 					if (law._source.buff_suff_first === "") {
 						return "";
 					} else {
-						return ` > [ภาค ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ภาค ${law._source.buff_suff_first}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-100&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				function hide_buff_suff_second() {
 					if (law._source.buff_suff_second === "") {
 						return "";
 					} else {
-						return ` > [ภาค ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายแพ่งและพาณิชย์&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
+						return ` > [ภาค ${law._source.buff_suff_second}](https://www.lawphin.com/result/law?conjunction=and&law_origin_type=ประมวลกฎหมาย&law_category=ประมวลกฎหมายวิธีพิจารณาความอาญา&legalrulesubsection=ไม่มีเลือก&law_buff=${law._source.buff}-${law._source.buff_suff_first}-${law._source.buff_suff_second}&from_year=2535&to_year=2563&law_sub_category=all&state=all&post_per_page=10&sort_by=year&page=1)`;
 					}
 				}
 				const embed = new Discord.MessageEmbed()
