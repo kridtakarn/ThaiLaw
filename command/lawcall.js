@@ -1,5 +1,6 @@
 const Discord = require(`discord.js`);
 const {prefix, bot_author, thumbnail_bot} = require(`./config.json`);
+const {com60} = require(`./manual_law.json`);
 const axios = require(`axios`);
 
 module.exports = {
@@ -451,6 +452,61 @@ module.exports = {
 				message.channel.send(embed);
 			} else {
 				message.reply("กรุณาระบุประเภทของกฎหมายหรือระบุเลขมาตราให้ถูกต้อง");
+			}
+		} else if (args[0] === `พรบ.คอม`) {
+			let section_num = parseInt(args[1]);
+			if (!args[1]) {
+				message.reply(`กรุณาระบุหมายเลขมาตราของพระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ ตามหลังชื่อประเภทประมวลกฎหมาย เพื่อเรียกบทบัญญัติ เช่น \`${prefix}lawcall พรบ.คอม 9\``);
+			} else if (!args[2]) { 
+				function hide_buff() {
+					if (com60.section.parseInt(section_num).buff === "") {
+						return "?";
+					} else {
+						return `หมวด ${com60.section.parseInt(section_num).buff}`;
+					}
+				}
+				const embed = new Discord.MessageEmbed()
+					.setColor(`#FFD700`)
+					.setTitle(`พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ มาตรา ${section_num}`)
+					.setURL(`http://web.krisdika.go.th/data/law/law2/%C771/%C771-20-9999-update.pdf`)
+					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
+					.setDescription(
+						`บัญญัติว่า \"**${com60.section.parseInt(section_num).source} **\"...[ดูเพิ่มเติม](http://web.krisdika.go.th/data/law/law2/%C771/%C771-20-9999-update.pdf)`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()}
+										`
+						}
+					)
+					.setTimestamp()
+					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
+				message.channel.send(embed);
+			}  else if (!args[3]) { 
+				function hide_buff() {
+					if (com60.section.parseInt(section_num).buff === "") {
+						return "?";
+					} else {
+						return `หมวด ${com60.section.parseInt(section_num).parseInt(sub_section_num).buff}`;
+					}
+				}
+				const embed = new Discord.MessageEmbed()
+					.setColor(`#FFD700`)
+					.setTitle(`พระราชบัญญัติว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ มาตรา ${section_num}`)
+					.setURL(`http://web.krisdika.go.th/data/law/law2/%C771/%C771-20-9999-update.pdf`)
+					.setAuthor(`${bot_author}`, thumbnail_bot, `https://discord.js.org`)
+					.setDescription(
+						`บัญญัติว่า \"**${com60.section.parseInt(section_num).parseInt(sub_section_num).source} **\"...[ดูเพิ่มเติม](http://web.krisdika.go.th/data/law/law2/%C771/%C771-20-9999-update.pdf)`)
+					.addFields(
+						{
+							name: "แม่บทของกฎหมาย",
+							value: `กฎหมายนี้อยู่ภายใต้ ${hide_buff()}
+										`
+						}
+					)
+					.setTimestamp()
+					.setFooter(`ถูกเรียกใช้โดย ${message.author.username}` , `${message.author.displayAvatarURL({ dynamic: true })}`);
+				message.channel.send(embed);
 			}
 		} else {
 			message.reply("กรุณาระบุประเภทของกฎหมายหรือระบุเลขมาตราให้ถูกต้อง");
